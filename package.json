@@ -1,0 +1,49 @@
+{
+  "name": "bnb-liquidity-mining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "test": "truffle test",
+    "coverage": "truffle run coverage",
+    "flatten": "truffle-flattener ./contracts/Miner.sol > ./contracts/.Miner.sol",
+    "solhint": "solhint \"contracts/**/*.sol\""
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "global": [
+      "contract",
+      "artifacts",
+      "web3"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neptune-mutual/bnb-liquidity-mining.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neptune-mutual/bnb-liquidity-mining/issues"
+  },
+  "homepage": "https://github.com/neptune-mutual/bnb-liquidity-mining#readme",
+  "devDependencies": {
+    "bignumber.js": "^9.0.1",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "openzeppelin-solidity": "^4.1.0",
+    "prettier": "^2.3.0",
+    "prettier-plugin-solidity": "*",
+    "solidity-coverage": "^0.7.16",
+    "standard": "^16.0.3",
+    "truffle-flattener": "^1.5.0"
+  }
+}
